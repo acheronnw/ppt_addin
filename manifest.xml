@@ -7,7 +7,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>William</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Hello world"/>
+  <DisplayName DefaultValue="Hello test"/>
   <Description DefaultValue="A simple hello world Office Add-in."/>
   <IconUrl DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/hello-world/powerpoint-hello-world/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/hello-world/powerpoint-hello-world/assets/icon-64.png"/>
@@ -72,10 +72,10 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://github.com/acheronnw/ppt_addin/blob/main/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with the Hello world add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Contoso Add-in"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Hello world"/>
-        <bt:String id="TaskpaneButton.SupertipTitle" DefaultValue="Hello world"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with the Hello test2 add-in!"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="William Add-in"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Hello test3"/>
+        <bt:String id="TaskpaneButton.SupertipTitle" DefaultValue="Hello test4"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Hello world' button to get started."/>
