@@ -23,7 +23,7 @@
     async function sayHello() {
 
         // Set coercion type to text since 
-        const options = { coercionType: Office.CoercionType.Selection};
+        const options = { coercionType: Office.CoercionType.Text};
 
         // clear current selection
         await Office.context.document.setSelectedDataAsync(" ", options);
