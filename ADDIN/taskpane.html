@@ -10,6 +10,9 @@
 <body>
     <p>This add-in will insert 'Hello world!' in the current selection of the slide.</p>
     <button onclick="sayHello()">Say hello</button>
+    <p>This add-in will swap the selected image.</>
+    <button onclick="sayHello()">Change image</button>
+
 </body>
 
 <script>
@@ -18,18 +21,20 @@
         if (info.host === Office.HostType.PowerPoint) {
             document.getElementById("helloButton").onclick = sayHello;
         }
+        
     });
 
     async function sayHello() {
 
         // Set coercion type to text since 
-        const options = { coercionType: Office.CoercionType.Text };
+        const optiontext = { coercionType: Office.CoercionType.Text };
+        const optionimage = { coercionType: Office.CoercionType.Image};
 
         // clear current selection
-        await Office.context.document.setSelectedDataAsync(" ", options);
+        await Office.context.document.setSelectedDataAsync(" ", optiontext);
 
         // Set text in selection to 'Hello world!'
-        await Office.context.document.setSelectedDataAsync("Hello world!", options);
+        await Office.context.document.setSelectedDataAsync("Hello world!", optiontext);
     }
 
 </script>
