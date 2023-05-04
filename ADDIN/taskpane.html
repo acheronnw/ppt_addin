@@ -37,7 +37,7 @@
         // Set text in selection to 'Hello world!'
         await Office.context.document.setSelectedDataAsync("Hello world!", optiontext);
     }
-    async function sayHello() {
+    async function align() {
         Office.context.document.setSelectedDataAsync("Hello World!", function (asyncResult) {
        if (asyncResult.status == Office.AsyncResultStatus.Failed) {
          write(asyncResult.error.message);
