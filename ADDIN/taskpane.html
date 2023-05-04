@@ -11,7 +11,7 @@
     <p>This add-in will insert 'Hello world!' in the current selection of the slide.</p>
     <button onclick="sayHello()">Say hello</button>
     <p>This add-in will align.</p>
-    <button id="align">Align obj</button>
+    <button onclick="align()">Align obj</button>
 
 </body>
 
@@ -37,11 +37,7 @@
         // Set text in selection to 'Hello world!'
         await Office.context.document.setSelectedDataAsync("Hello world!", optiontext);
     }
-    async function align() {
-        const selection = { coercionType: Office.CoercionType.Selection };
-        await Office.context.document.setSelectedDataAsync("Hello World!", selection);
-        
-    }
+   
 
 </script>
 
